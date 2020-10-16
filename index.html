@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>mdb - all inputs</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/mdb.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <div>
+        <div class="container">
+
+            <!-- -------------------------------------------TITLE, INPUTS AND CODES TO COPY--------------------------------------------->
+
+            <div class="row text-center mb-3 mt-3">
+                <div class="col-md-12 text-center">
+                    <h1>Text, Select, Date</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form-outline">
+                        <input type="text" id="input-1" class="form-control">
+                        <label class="form-label" for="input-1">Text input</label>
+                    </div>
+                    <textarea id="input-text">
+                        <div class="form-outline">
+                            <input type="text" id="input-1" class="form-control">
+                            <label class="form-label" for="input-1">Text input</label>
+                        </div>
+                    </textarea>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-outline-select">
+                        <select class="form-control select-input" required="">
+                            <option value=""></option>
+                            <option value="13">This is item 2</option>
+                            <option value="14">This is item 3</option>
+                        </select>
+                        <label class="form-label-select">Label</label>
+                    </div>
+                    <textarea id="input-select">
+                        <div class="form-outline-select">
+                            <select class="form-control select-input" required="">
+                                <option value=""></option>
+                                <option value="13">This is item 2</option>
+                                <option value="14">This is item 3</option>
+                            </select>
+                            <label class="form-label-select">Label</label>
+                        </div>
+                    </textarea>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-outline-select">
+                        <select class="form-control select-input">
+                            <option value="12" selected="">option 1</option>
+                            <option value="13">option 2</option>
+                            <option value="14">option 3</option>
+                        </select>
+                        <label class="form-label-select">Label</label>
+                    </div>
+                    <textarea id="input-select-fixed-label">
+                        <div class="form-outline-select">
+                            <select class="form-control select-input">
+                                <option value="12" selected="">option 1</option>
+                                <option value="13">option 2</option>
+                                <option value="14">option 3</option>
+                            </select>
+                            <label class="form-label-select">Label</label>
+                        </div>
+                    </textarea>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-outline">
+                        <input class="form-control" type="date">
+                        <label class="form-label form-label-date">Label</label>
+                    </div>
+                    <textarea id="input-date">
+                        <div class="form-outline">
+                            <input class="form-control" type="date">
+                            <label class="form-label form-label-date">Label</label>
+                        </div>
+                    </textarea>
+                </div>
+            </div>
+
+            <!-- -----------------------------------------------COPY BUTTONS----------------------------------------------- -->
+
+            <div class="row text-center mb-3 mt-3">
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-secondary" onclick="copy('#input-text')">
+                        Copy Code <i class="fas fa-code"></i>
+                    </button>
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-secondary" onclick="copy('#input-select')">
+                        Copy Code <i class="fas fa-code"></i>
+                    </button>
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-secondary" onclick="copy('#input-select-fixed-label')">
+                        Copy Code <i class="fas fa-code"></i>
+                    </button>
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-secondary" onclick="copy('#input-date')">
+                        Copy Code <i class="fas fa-code"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+
+            <!-- -------------------------------------------TITLE, INPUTS AND CODES TO COPY--------------------------------------------->
+
+            <div class="row">
+                <div class="col-md-12 text-center mb-3 mt-3">
+                    <h1>Radio, Checkbox, Range, File</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="opt1" name="opt">
+                        <label class="form-check-label" for="opt1">option 1</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="opt2" name="opt">
+                        <label class="form-check-label" for="opt2">option 2</label>
+                    </div>
+                    <textarea id="input-radio">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="opt1" name="opt">
+                            <label class="form-check-label" for="opt1">option 1</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="opt2" name="opt">
+                            <label class="form-check-label" for="opt2">option 2</label>
+                        </div>
+                    </textarea>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="opt1-chbx">
+                        <label class="form-check-label" for="opt1-chbx">option 1</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="opt2-chbx">
+                        <label class="form-check-label" for="opt2-chbx">option 2</label>
+                    </div>
+                    <textarea id="input-checkbox">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="opt2-chbx">
+                            <label class="form-check-label" for="opt2-chbx">option 2</label>
+                        </div>
+                    </textarea>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <label class="form-label">Range amount</label>
+                        <input type="range" class="form-range">
+                    </div>
+                    <textarea id="input-range">
+                        <div>
+                            <label class="form-label">Range amount</label>
+                            <input type="range" class="form-range">
+                        </div>
+                    </textarea>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-outline form-control">
+                        <label for="file-input" id="file-name">Upload <i class="fas fa-file-upload"></i></label>
+                        <input type="file" id="file-input" class="select-input">
+                        <label class="form-label-file">File upload</label>
+                    </div>
+                    <textarea id="input-file">
+                        <div class="form-outline form-control">
+                            <label for="file-input" id="file-name">Upload <i class="fas fa-file-upload"></i></label>
+                            <input type="file" id="file-input" class="select-input">
+                            <label class="form-label-file">File upload</label>
+                        </div>
+                    </textarea>
+                </div>
+
+                <!-- -----------------------------------------------COPY BUTTONS----------------------------------------------- -->
+
+                <div class="row text-center mb-3 mt-3">
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-secondary" onclick="copy('#input-radio')">
+                            Copy Code <i class="fas fa-code"></i>
+                        </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-secondary" onclick="copy('#input-checkbox')">
+                            Copy Code <i class="fas fa-code"></i>
+                        </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-secondary" onclick="copy('#input-range')">
+                            Copy Code <i class="fas fa-code"></i>
+                        </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-secondary" onclick="copy('#input-file')">
+                            Copy Code <i class="fas fa-code"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+        <!-- -------------------------------------------TITLE, INPUTS AND CODES TO COPY--------------------------------------------->
+
+        <div class="row text-center mb-3 mt-3">
+            <div class="col">
+                <h1 class="text-center">Buttons</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-primary" type="button">Button</button>
+                <button class="btn btn-secondary" type="button">Button</button>
+                <button class="btn btn-success" type="button">Button</button>
+                <button class="btn btn-info" type="button">Button</button>
+                <button class="btn btn-warning" type="button">Button</button>
+                <button class="btn btn-danger" type="button">Button</button>
+                <button class="btn btn-light" type="button">Button</button>
+                <button class="btn btn-dark" type="button">Button</button>
+                <button class="btn btn-link" type="button">Button</button>
+                <button class="btn" type="button">Button</button>
+            </div>
+        </div>
+        <div class="row text-center mb-3 mt-3">
+            <p><b>To see all Bootstrap button classes access: <a href="https://getbootstrap.com/docs/4.0/components/buttons/">getbootstrap.com</a></b></p>
+
+        </div>
+        <div class="container">
+
+            <!-- -------------------------------------------TITLE, INPUTS AND CODES TO COPY--------------------------------------------->
+
+            <div class="row text-center mb-3 mt-3">
+                <div class="col">
+                    <h1 class="text-center">Checkbox Rounded</h1>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <textarea id="input-checkbox-rounded">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </textarea>
+            </div>
+            <div class="row text-center mb-3 mt-3">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-secondary" onclick="copy('#input-checkbox-rounded')">
+                        Copy Code <i class="fas fa-code"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/mdb.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
